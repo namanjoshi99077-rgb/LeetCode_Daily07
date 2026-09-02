@@ -1,0 +1,7 @@
+problem : Construct Uniform Parity Array I ( 3875 )
+
+code :
+class Solution {
+public:
+    bool uniformArray(auto& A) { return 1; }
+};
