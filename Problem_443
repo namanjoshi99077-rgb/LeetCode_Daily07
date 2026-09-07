@@ -1,0 +1,29 @@
+problem : string compression ( 443 ) 
+
+code :
+class Solution {
+public:
+    int compress(vector<char>& A) {
+        int idx = 0;
+        int n = A.size();
+
+        for ( int  i = 0 ; i < n ; i++){
+            char ch  = A[i];
+            int count = 0;
+
+            while( i < n && A[i] == ch){
+                count++;
+                i++;
+            }
+            A[idx++] = ch;
+            if ( count > 1){
+                string str = to_string(count);
+                for( char dig : str){
+                    A[idx++] = dig;
+                }
+            }
+            i--;
+        }
+        return idx;
+    }
+};
