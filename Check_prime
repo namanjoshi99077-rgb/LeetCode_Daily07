@@ -1,0 +1,20 @@
+problem : checking a prime number ( Extra )
+
+code :
+#include <iostream>
+using namespace std;
+
+string isprime(int n){
+    for( int i = 2 ; i*i <= n ; i++){
+        if( n % i == 0){
+            return "NON PRIME";
+        }
+    }
+    return "PRIME";
+}
+int main() {
+    int a = 4;
+
+    cout<< isprime(a)<< endl;
+    return 0;
+}
