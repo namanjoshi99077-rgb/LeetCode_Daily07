@@ -1,0 +1,9 @@
+problem : Number of Unique Subjects Taught by Each Teacher ( MYSQL ) ( 2356 )
+
+
+code :
+SELECT teacher_id ,
+count(distinct subject_id) as cnt
+From teacher 
+Group by 
+teacher_id;
