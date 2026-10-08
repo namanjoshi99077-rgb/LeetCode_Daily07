@@ -11,7 +11,7 @@ for(int i = 0 ; i < n-1; i++){
             swap(arr[j], arr[j+1]);
         }
 
-    
+
 }
 }
 void selectionsort(int arr[],int n){
