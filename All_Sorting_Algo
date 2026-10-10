@@ -21,7 +21,7 @@ void selectionsort(int arr[],int n){
                 si = j;
             }
         }
-        swap(arr[i] , arr[si]);
+         swap(arr[i] , arr[si]);
     }
 }
 void insertionsort(int arr[], int n) {
